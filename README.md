@@ -43,6 +43,7 @@ Run the following command to start the backend server:
 If the server starts successfully, you should see the following messages in your terminal:
 
 > ✓ [SERVER STARTED] port 5000
+
 > ✓ [DB CONNECTED] - URI mongodb+srv://msaroardev:VnhMoIpWblU2fQ2k@devcluster.z8t4j.mongodb.net/garibd_dev
 
 These messages indicate that the server is running perfectly and is connected to the MongoDB database.
