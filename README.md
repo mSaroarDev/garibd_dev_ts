@@ -1,44 +1,59 @@
-### Welcome to GariBd Development Environment!
+const markdownContent = `# Welcome to GariBd Development Environment!
 
-Please follow the instruction to run the server to your local machine...
+Please follow the instructions below to set up and run the server on your local machine.
 
-#### Requirement
-Must install these packages to your computer
-1. node js (version 23.0.1 or higher)
-2. yarn 
-3. typescript
+## Requirements
 
-#### Dependencies
-user yarn to install the dependencies
-open terminal and run 
+Ensure the following packages are installed on your computer:
 
-``yarn``
+1. **Node.js** (version 23.0.1 or higher)
+2. **Yarn**
+3. **TypeScript**
 
-##### env file
-create **.env** to the root of the project directory and add these code if not already
+## Installation
 
-``PORT=5000
+### Step 1: Install Dependencies
 
+Open your terminal and navigate to the project directory. Run the following command to install the necessary dependencies:
+
+\`\`\`bash
+yarn
+\`\`\`
+
+### Step 2: Configure Environment Variables
+
+Create a \`.env\` file in the root of the project directory if it doesn't already exist. Add the following configuration:
+
+\`\`\`env
+PORT=5000
 CLIENT_URL=http://localhost:5001
-
 NODE_ENV=development
-
 JWT_SECRET=123
-
 JWT_REFRESH_SECRET=456
-
 SALT_ROUNDS=10
+DB_URI=mongodb+srv://msaroardev:VnhMoIpWblU2fQ2k@devcluster.z8t4j.mongodb.net/garibd_dev
+\`\`\`
 
-DB_URI=mongodb+srv://msaroardev:VnhMoIpWblU2fQ2k@devcluster.z8t4j.mongodb.net/garibd_dev``
+### Step 3: Start the Backend Server
 
-#### start the backend
-run the command 
+Run the following command to start the backend server:
 
-``yarn dev``
+\`\`\`bash
+yarn dev
+\`\`\`
 
-#### Finally 
-showing these lines indicates that the server is running perfectly
+### Step 4: Verify Server Status
 
-``✓ [SERVER STARTED] port 5000``
+If the server starts successfully, you should see the following messages in your terminal:
 
-``✓ [DB CONNECTED] - URI mongodb+srv://msaroardev:VnhMoIpWblU2fQ2k@devcluster.z8t4j.mongodb.net/garibd_dev``
+\`\`\`bash
+✓ [SERVER STARTED] port 5000
+✓ [DB CONNECTED] - URI mongodb+srv://msaroardev:VnhMoIpWblU2fQ2k@devcluster.z8t4j.mongodb.net/garibd_dev
+\`\`\`
+
+These messages indicate that the server is running perfectly and is connected to the MongoDB database.
+
+## Conclusion
+
+You have successfully set up and started the GariBd development server on your local machine. Happy coding!
+`;
